@@ -21,7 +21,8 @@ enum
     TLV_PRIMITIVE_UINT32 = 0x2,
     TLV_PRIMITIVE_UINT64 = 0x3,
     TLV_PRIMITIVE_STRING = 0x4,
-    TLV_CONTAINER = 0xFF,
+    TLV_TYPE_TLV = 0xFE,
+    TLV_TYPE_CONTAINER = 0xFF,
 };
 
 void initTlv (TLV** tlv, uint32_t length);
